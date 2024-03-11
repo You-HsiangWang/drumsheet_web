@@ -1,0 +1,32 @@
+/**
+* INFO: 客製化調整PrimeNG樣式屬性
+* 2023/11/29 因原生PrimeNG Scss樣式已套用@layer，在競爭選擇權中小於未套@layer的屬性，故部分樣式宣告需於此進行再宣告
+*/
+.p-calendar-w-btn .p-inputtext {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.p-calendar-w-btn .p-datepicker-trigger {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.p-inputnumber-buttons-stacked .p-inputnumber-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button-up {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0;
+}
+
+.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button-down {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0;
+}

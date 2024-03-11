@@ -1,0 +1,37 @@
+:root{
+  --form-label-width: 100%;
+  --form-textarea-height: 320px;
+}
+@media screen and (min-width: 768px){
+  :root{
+    --form-label-width: 90px;
+  }
+}
+@media screen and (min-width: 992px){
+  :root{
+    --form-label-width: 76px;
+  }
+}
+@media screen and (min-width: 1960px){
+  :root{
+    --form-label-width: 76px;
+  }
+}
+
+.form-small-card{
+  background: var(--surface-card);
+  border: 1px solid var(--surface-border);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--card-shadow);
+  border-radius: 12px;
+}
+
+.form-feild{
+  background: var(--surface-card);
+  border-top: 1px solid var(--surface-border);
+  border-bottom: 1px solid var(--surface-border);
+  padding: .5rem;
+  margin-bottom: 2rem;
+}
+

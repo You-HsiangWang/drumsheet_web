@@ -1,0 +1,19 @@
+<div
+  class="layout-container"
+  [ngClass]="containerClass"
+>
+  <app-sidebar *ngIf="isApolloToolKit"></app-sidebar>
+  <div class="layout-content-wrapper">
+    <app-topbar *ngIf="isApolloToolKit"></app-topbar>
+    <app-breadcrumb
+      *ngIf="isApolloToolKit"
+      class="content-breadcrumb"
+    ></app-breadcrumb>
+    <div class="layout-content">
+      <ng-content #apolloLayout></ng-content>
+    </div>
+  </div>
+  <app-profilemenu *ngIf="isApolloToolKit"></app-profilemenu>
+  <app-config *ngIf="isApolloToolKit"></app-config>
+  <div class="layout-mask"></div>
+</div>

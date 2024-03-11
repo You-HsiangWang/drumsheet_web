@@ -1,0 +1,18 @@
+.page-header{
+  background-color: rgb(255, 255, 255);
+  font-weight: 900;
+  line-height: 50px;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+}
+.page-header-bg{
+  background-image: url('../../img/header_bgc_presale_slide.svg');
+  background-position: center;
+  background-size: 100% auto;
+  height: 50px;
+
+  @media (max-width: 540px) {
+    background-image: url('../../img/header_bgc_presale_slide_small.svg');
+  }
+}

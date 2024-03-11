@@ -1,0 +1,46 @@
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.modal-ptc-xl {
+  max-width: 96%;
+  line-height: normal;
+}
+
+.modal-cancel-icon {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.user-disable {
+  cursor: not-allowed;
+  opacity: 0.6;
+
+  * {
+    pointer-events: none;
+  }
+}
+
+*:disabled {
+  cursor: not-allowed;
+}
+
+*[disabled] {
+  cursor: not-allowed;
+}
+
+.p-checkbox-disabled.p-component,
+.p-disabled.p-component,
+.p-disabled.p-component * {
+  pointer-events: inherit;
+  cursor: not-allowed !important;
+}
