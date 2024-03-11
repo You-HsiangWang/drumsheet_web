@@ -81,7 +81,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       inputStyle: 'outlined',
       menuMode: 'static',
       colorScheme: 'light',
-      theme: 'teal',
+      theme: 'orange',
       menuTheme: 'colorScheme',
       scale: 14,
     };

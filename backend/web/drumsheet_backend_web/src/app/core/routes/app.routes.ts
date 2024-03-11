@@ -13,7 +13,15 @@ export const routes: Routes = [
       title: '版本',
     },
   },
-  //TODO: 移除
+  {
+    path: 'sheet-music', //版本號路由
+    component: ApolloBasicLayoutComponent,
+    loadChildren: () =>
+      import('../../features/sheet-music/sheet-music.routes').then((r) => r.routes),
+    data: {
+      title: '樂譜',
+    },
+  },
   {
     path: '',
     component: BasicLayoutComponent, //normal layout
