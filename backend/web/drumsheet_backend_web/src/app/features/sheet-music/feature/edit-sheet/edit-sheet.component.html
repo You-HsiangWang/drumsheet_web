@@ -1,9 +1,3 @@
-<p>edit-sheet works!</p>
-<p-fileUpload name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" (onUpload)="onUpload()"
-  [multiple]="true" accept="image/*" [maxFileSize]="1000000">
-  <ng-template pTemplate="content">
-    <ul *ngIf="uploadedFiles.length">
-      <li *ngFor="let file of uploadedFiles">{{ file.name }} - {{ file.size }} bytes</li>
-    </ul>
-  </ng-template>
-</p-fileUpload>
+<div class="card flex justify-content-center">
+  <p-fileUpload mode="basic" [customUpload]="true" chooseLabel="Choose" name="demo[]" url="" accept="image/*" [maxFileSize]="1000000" (uploadHandler)="onUpload($event)"></p-fileUpload>
+</div>
